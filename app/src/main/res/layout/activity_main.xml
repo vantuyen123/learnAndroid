@@ -8,41 +8,45 @@
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_Login"
         android:layout_width="201dp"
         android:layout_height="65dp"
         android:layout_marginTop="100dp"
-        android:text="Chang Screem 1"
+        android:text="Đăng Nhập"
+        android:onClick="login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_Register"
         android:layout_width="201dp"
         android:layout_height="65dp"
         android:layout_marginTop="200dp"
-        android:text="Chang Screem 2"
+        android:text="Đăng Ký"
+        android:onClick="register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button_Profile"
         android:layout_width="201dp"
         android:layout_height="65dp"
         android:layout_marginTop="300dp"
-        android:text="Chang Screem 3"
+        android:text="Tài Khoản"
+        android:onClick="profile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button_Exit"
         android:layout_width="201dp"
         android:layout_height="65dp"
         android:layout_marginTop="400dp"
-        android:text="Chang Screem 4"
+        android:text="Thoát"
+        android:onClick="exit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

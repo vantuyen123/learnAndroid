@@ -4,18 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Screen4">
+    tools:context=".RegisterActivity"
+    tools:ignore="MissingConstraints">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="153dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="104dp"
-        android:layout_marginEnd="200dp"
-        android:layout_marginRight="200dp"
-        android:text="Đăng ký :)"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.762"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="410dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="224dp"
+        android:gravity="center"
+        android:text="Đăng Ký"
+        android:textSize="30dp"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
