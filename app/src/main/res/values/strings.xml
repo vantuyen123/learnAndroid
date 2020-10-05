@@ -9,4 +9,15 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="add_subject">Add Subject</string>
+    <string name="update_subject">Update Subject</string>
+    <string name="subject">subject</string>
+    <string name="anime">Anime</string>
+    <string name="exit">Thoát</string>
+    <string name="view_holder">View Holder</string>
+    <string name="profile">Tài Khoản</string>
+    <string name="register">Đăng Ký</string>
+    <string name="login">Đăng Nhập</string>
+    <string name="title">title</string>
+    <string name="description">description</string>
 </resources>

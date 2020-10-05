@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.view.View;
 import android.widget.Toast;
@@ -33,5 +35,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void exit(View view) {
         finish();
+    }
+
+
+
+    public void Anime(View view) {
+        Intent anime = new Intent(this,AnimeActivity.class);
+        startActivity(anime);
     }
 }
