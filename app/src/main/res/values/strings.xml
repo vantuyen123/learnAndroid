@@ -24,4 +24,5 @@
     <string name="getUser">Nhập tài khoản</string>
     <string name="Password">Mật Khẩu :</string>
     <string name="getPassword">Nhập Mật Khẩu</string>
+    <string name="textTop">Already Hava an Account ?</string>
 </resources>
