@@ -4,47 +4,192 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fadeScrollbars="true"
     tools:context=".MainActivity">
 
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="201dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="100dp"
-        android:text="Chang Screem 1"
+    <View
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="201dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="200dp"
-        android:text="Chang Screem 2"
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_wave2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/topView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="135dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/ng_nh_p"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/topView"
+        app:layout_constraintTop_toTopOf="@+id/topView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_person"
+        tools:ignore="VectorDrawableCompat" />
+
+    <EditText
+        android:id="@+id/edUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/round_bd"
+        android:drawableStart="@drawable/ic_account"
+        android:drawableLeft="@drawable/ic_account"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="@string/t_i_kho_n"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <EditText
+        android:id="@+id/edPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/round_bd"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="@string/m_t_kh_u"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edUser" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="201dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="300dp"
-        android:text="Chang Screem 3"
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/round_bg"
+        android:text="@string/ng_nh_p"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/edPass" />
+
+    <TextView
+        android:id="@+id/forgotPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:gravity="center"
+        android:onClick="forgotPassword"
+        android:text="@string/qu_n_m_t_kh_u"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/or"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPass" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="201dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="400dp"
-        android:text="Chang Screem 4"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btnFb"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/facebook"
+        android:onClick="loginWithFacebook"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btnGoogle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/google"
+        android:onClick="loginWithGoogle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnFb"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="register"
+        android:text="@string/ng_k"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoogle"
+        tools:ignore="OnClick" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

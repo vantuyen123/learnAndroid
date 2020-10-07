@@ -1,70 +1,48 @@
 package com.example.demoandroid;
 
+import android.content.Intent;
+import android.graphics.Paint;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.widget.Button;
-import  android.view.View;
-
 public class MainActivity extends AppCompatActivity {
-    private Button button;
-    private Button button2;
-    private Button button3;
-    private Button button4;
-    public String name = "Văn Tuyền";
-    public String age = "22";
-    public String address = "Đại Hưng - Khoái Châu - Hưng Yên";
-
+    private TextView txtRegister, forgotPass;
+    private EditText username, password;
+    private Button login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        this.button  = (Button)this.findViewById(R.id.button);
-        this.button2 = (Button) this.findViewById(R.id.button2);
-        this.button3 = (Button) this.findViewById(R.id.button3);
-        this.button4 = (Button) this.findViewById(R.id.button4);
+        txtRegister = findViewById(R.id.txtRegister);
+        forgotPass = findViewById(R.id.forgotPass);
+        txtRegister.setPaintFlags(txtRegister.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+        forgotPass.setPaintFlags(forgotPass.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+    }
 
-        button.setOnClickListener(new Button.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent myIntent = new Intent(MainActivity.this,Screen1.class);
-                myIntent.putExtra("text1","This is text 1 from MainActivity");
-                myIntent.putExtra("text2","This is text 2 from MainActivity");
-                MainActivity.this.startActivity(myIntent);
-            }
-        });
-        button2.setOnClickListener(new Button.OnClickListener(){
-            @Override
-            public  void onClick(View v){
-                Intent myIntent = new Intent(MainActivity.this,Screen2.class);
-                myIntent.putExtra("name",name);
-                myIntent.putExtra("age",age);
-                myIntent.putExtra("address",address);
-                MainActivity.this.startActivity(myIntent);
-            }
-        });
+    public void register(View view) {
+        Intent register = new Intent(this, RegisterActivity.class);
+        startActivity(register);
+    }
 
-        button3.setOnClickListener(new Button.OnClickListener(){
-            @Override
-            public void onClick(View v)
-            {
-                Intent myIntent = new Intent(MainActivity.this,Screen3.class);
-                MainActivity.this.startActivity(myIntent);
-            }
 
-        });
-        button4.setOnClickListener(new Button.OnClickListener(){
-            @Override
-            public  void onClick(View v)
-            {
-                Intent myIntent = new Intent(MainActivity.this,Screen4.class);
-                MainActivity.this.startActivity(myIntent);
-            }
+    public void loginWithFacebook(View view) {
+        Toast.makeText(this, "LOGIN WITH FACEBOOK", Toast.LENGTH_SHORT).show();
+    }
 
-        });
+    public void loginWithGoogle(View view) {
+        Toast.makeText(this, "LOGIN WITH GOOGLE", Toast.LENGTH_SHORT).show();
 
     }
 
+    public void forgotPassword(View view) {
+        Intent forgotPass = new Intent(this, ForgotPassActivity.class);
+        startActivity(forgotPass);
+    }
 }

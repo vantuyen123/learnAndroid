@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">demoAndroid</string>
+    <string name="t_i_kho_n">Tài Khoản</string>
+    <string name="login">LOGIN</string>
+    <string name="ng_nh_p">Đăng Nhập</string>
+    <string name="m_t_kh_u">Mật Khẩu</string>
+    <string name="qu_n_m_t_kh_u">Quên Mật Khẩu ?</string>
+    <string name="or">OR</string>
+    <string name="ng_k">Đăng Ký Ngay!</string>
+    <string name="ng_k_t_i_kho_n">Đăng Ký Tài Khoản</string>
+    <string name="name">Họ Và Tên</string>
+    <string name="address">Địa Chỉ</string>
+    <string name="email">Email</string>
+    <string name="nh_p_l_i_m_t_kh_u">Nhập lại mật khẩu!</string>
+    <string name="register">Đăng Ký</string>
+    <string name="g_i">Gửi</string>
 </resources>
