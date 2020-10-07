@@ -8,43 +8,60 @@
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_Login"
         android:layout_width="201dp"
         android:layout_height="65dp"
         android:layout_marginTop="100dp"
-        android:text="Chang Screem 1"
+        android:text="@string/login"
+        android:onClick="login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_Register"
         android:layout_width="201dp"
         android:layout_height="65dp"
-        android:layout_marginTop="200dp"
-        android:text="Chang Screem 2"
+        android:layout_marginTop="100dp"
+        android:text="@string/register"
+        android:onClick="register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/button_Login" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button_Profile"
         android:layout_width="201dp"
         android:layout_height="65dp"
-        android:layout_marginTop="300dp"
-        android:text="Chang Screem 3"
+        android:layout_marginTop="100dp"
+        android:text="@string/profile"
+        android:onClick="profile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/button_Register" />
+
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button_Anime"
         android:layout_width="201dp"
         android:layout_height="65dp"
-        android:layout_marginTop="400dp"
-        android:text="Chang Screem 4"
+        android:layout_marginTop="100dp"
+        android:onClick="Anime"
+        android:text="@string/anime"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/button_Profile" />
+
+
+    <Button
+        android:id="@+id/button_Exit"
+        android:layout_width="201dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="100dp"
+        android:onClick="exit"
+        android:text="@string/exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/button_Anime" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
