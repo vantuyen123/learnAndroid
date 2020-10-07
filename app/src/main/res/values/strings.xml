@@ -20,4 +20,8 @@
     <string name="login">Đăng Nhập</string>
     <string name="title">title</string>
     <string name="description">description</string>
+    <string name="user_name">Tài Khoản :</string>
+    <string name="getUser">Nhập tài khoản</string>
+    <string name="Password">Mật Khẩu :</string>
+    <string name="getPassword">Nhập Mật Khẩu</string>
 </resources>

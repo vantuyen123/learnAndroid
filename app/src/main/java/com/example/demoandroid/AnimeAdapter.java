@@ -9,7 +9,6 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
 
 import java.util.List;
 
@@ -39,7 +38,7 @@ public class AnimeAdapter extends BaseAdapter {
         return 0;
     }
 
-    private class ViewHolder {
+    private static class ViewHolder {
         ImageView image;
         TextView name, description;
     }

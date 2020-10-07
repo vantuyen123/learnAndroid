@@ -15,8 +15,6 @@ public class RegisterActivity extends AppCompatActivity {
         address = (EditText)findViewById(R.id.editTextAddress);
         years = (EditText)findViewById(R.id.editTextYears);
         phone = (EditText)findViewById(R.id.editTextPhone);
-        username = (EditText)findViewById(R.id.editTextUser);
-        password = (EditText)findViewById(R.id.editTextPass);
         re_password = (EditText)findViewById(R.id.editTextRePassword);
     }
 
