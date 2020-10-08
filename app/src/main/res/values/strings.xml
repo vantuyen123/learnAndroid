@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">demoAndroid</string>
+    <string name="or_sign_in_with">Or Sign in with</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Sign In</string>
+    <string name="welcome_back_i_have_been_waiting_for_you_for_a_long_time">Welcome Back !</string>
 </resources>
