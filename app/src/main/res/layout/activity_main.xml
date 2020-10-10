@@ -1,67 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-
-    <Button
-        android:id="@+id/button_Login"
-        android:layout_width="201dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="100dp"
-        android:text="@string/login"
-        android:onClick="login"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button_Register"
-        android:layout_width="201dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="100dp"
-        android:text="@string/register"
-        android:onClick="register"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/button_Login" />
-
-    <Button
-        android:id="@+id/button_Profile"
-        android:layout_width="201dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="100dp"
-        android:text="@string/profile"
-        android:onClick="profile"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/button_Register" />
-
-
-    <Button
-        android:id="@+id/button_Anime"
-        android:layout_width="201dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="100dp"
-        android:onClick="Anime"
-        android:text="@string/anime"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button_Profile" />
-
-
-    <Button
-        android:id="@+id/button_Exit"
-        android:layout_width="201dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="100dp"
-        android:onClick="exit"
-        android:text="@string/exit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/button_Anime" />
-
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/postRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingStart="0dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="0dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

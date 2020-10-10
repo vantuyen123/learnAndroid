@@ -1,14 +1,16 @@
 package com.example.demoandroid;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.Button;
-import android.view.View;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
+
+import com.example.demoandroid.Post.PostItem;
+import com.example.demoandroid.adapter.PostAdapter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,31 +18,39 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
+        RecyclerView postRecyclerView = findViewById(R.id.postRecyclerView);
+        postRecyclerView.setLayoutManager(
+                new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL)
+        );
+        List<PostItem> postItems = new ArrayList<>();
+        postItems.add(new PostItem(R.drawable.agvae));
+        postItems.add(new PostItem(R.drawable.anh));
+        postItems.add(new PostItem(R.drawable.anhydep1));
+        postItems.add(new PostItem(R.drawable.anime1));
+        postItems.add(new PostItem(R.drawable.anime2));
+        postItems.add(new PostItem(R.drawable.anime3));
+        postItems.add(new PostItem(R.drawable.anime4));
+        postItems.add(new PostItem(R.drawable.anime5));
+        postItems.add(new PostItem(R.drawable.anime6));
+        postItems.add(new PostItem(R.drawable.anime7));
+        postItems.add(new PostItem(R.drawable.anime8));
+        postItems.add(new PostItem(R.drawable.anime9));
+        postItems.add(new PostItem(R.drawable.anime10));
+        postItems.add(new PostItem(R.drawable.anime11));
+        postItems.add(new PostItem(R.drawable.anime12));
+        postItems.add(new PostItem(R.drawable.anime13));
+        postItems.add(new PostItem(R.drawable.anime14));
+        postItems.add(new PostItem(R.drawable.anime15));
+        postItems.add(new PostItem(R.drawable.anime16));
+        postItems.add(new PostItem(R.drawable.anime17));
+        postItems.add(new PostItem(R.drawable.anime18));
+        postItems.add(new PostItem(R.drawable.anime19));
+        postItems.add(new PostItem(R.drawable.anime20));
+        postItems.add(new PostItem(R.drawable.b83651e87332d7a9e4328ab93fe785e4));
+        postItems.add(new PostItem(R.drawable.dc0eeb9e5380973bfff6a5d5930da2b3));
+        postItems.add(new PostItem(R.drawable.edqrer));
+        postItems.add(new PostItem(R.drawable.j5iyepy));
 
-    public void login(View view) {
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
-    }
-
-    public void register(View view) {
-        Intent intent = new Intent(this, RegisterActivity.class);
-        startActivity(intent);
-    }
-
-    public void profile(View view) {
-        Intent intent = new Intent(this, ProfileActivity.class);
-        startActivity(intent);
-    }
-
-    public void exit(View view) {
-        finish();
-    }
-
-
-
-    public void Anime(View view) {
-        Intent anime = new Intent(this,AnimeActivity.class);
-        startActivity(anime);
+        postRecyclerView.setAdapter(new PostAdapter(postItems));
     }
 }
