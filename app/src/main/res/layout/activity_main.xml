@@ -4,14 +4,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/postRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:clipToPadding="false"
-        android:paddingStart="0dp"
-        android:paddingEnd="15dp"
-        android:paddingBottom="15dp"
-        android:paddingRight="15dp"
-        android:paddingLeft="0dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
