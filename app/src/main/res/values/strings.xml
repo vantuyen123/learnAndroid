@@ -25,4 +25,14 @@
     <string name="Password">Mật Khẩu :</string>
     <string name="getPassword">Nhập Mật Khẩu</string>
     <string name="textTop">Already Hava an Account ?</string>
+    <string name="welcome_back">WelCome back !</string>
+    <string name="login_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or">OR</string>
+    <string name="good_morign">Good Morning</string>
+    <string name="good_evening">Good Evening</string>
+    <string name="good_afternoon">Good Afternoon</string>
+    <string name="good_night">Good Night</string>
+
+    <string name="forgot_password">Forgot Password ?</string>
 </resources>
